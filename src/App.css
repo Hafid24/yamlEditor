@@ -1,5 +1,42 @@
+body,
+html {
+  height: 60%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.padding-1 {
+  padding: 0.35em;
+}
+
+.h-200 {
+  height: 200px;
+}
+
+.overflow-auto {
+  overflow-y: auto;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 200px;
 }
 
 .App-logo {
@@ -32,6 +69,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
