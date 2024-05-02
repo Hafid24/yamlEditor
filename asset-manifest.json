@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/%3Chttps://hafid24.github.io/yamlEditor%3E/static/css/main.81e7ba29.css",
-    "main.js": "/%3Chttps://hafid24.github.io/yamlEditor%3E/static/js/main.ded08aa4.js",
-    "static/js/453.6dc39f21.chunk.js": "/%3Chttps://hafid24.github.io/yamlEditor%3E/static/js/453.6dc39f21.chunk.js",
-    "index.html": "/%3Chttps://hafid24.github.io/yamlEditor%3E/index.html",
-    "main.81e7ba29.css.map": "/%3Chttps://hafid24.github.io/yamlEditor%3E/static/css/main.81e7ba29.css.map",
-    "main.ded08aa4.js.map": "/%3Chttps://hafid24.github.io/yamlEditor%3E/static/js/main.ded08aa4.js.map",
-    "453.6dc39f21.chunk.js.map": "/%3Chttps://hafid24.github.io/yamlEditor%3E/static/js/453.6dc39f21.chunk.js.map"
+    "main.css": "/yamlEditor/static/css/main.81e7ba29.css",
+    "main.js": "/yamlEditor/static/js/main.f5c5a56e.js",
+    "static/js/453.6dc39f21.chunk.js": "/yamlEditor/static/js/453.6dc39f21.chunk.js",
+    "index.html": "/yamlEditor/index.html",
+    "main.81e7ba29.css.map": "/yamlEditor/static/css/main.81e7ba29.css.map",
+    "main.f5c5a56e.js.map": "/yamlEditor/static/js/main.f5c5a56e.js.map",
+    "453.6dc39f21.chunk.js.map": "/yamlEditor/static/js/453.6dc39f21.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81e7ba29.css",
-    "static/js/main.ded08aa4.js"
+    "static/js/main.f5c5a56e.js"
   ]
 }
