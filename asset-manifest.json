@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/yamlEditor/static/css/main.81e7ba29.css",
-    "main.js": "/yamlEditor/static/js/main.f5c5a56e.js",
+    "main.js": "/yamlEditor/static/js/main.77618dbf.js",
     "static/js/453.6dc39f21.chunk.js": "/yamlEditor/static/js/453.6dc39f21.chunk.js",
     "index.html": "/yamlEditor/index.html",
     "main.81e7ba29.css.map": "/yamlEditor/static/css/main.81e7ba29.css.map",
-    "main.f5c5a56e.js.map": "/yamlEditor/static/js/main.f5c5a56e.js.map",
+    "main.77618dbf.js.map": "/yamlEditor/static/js/main.77618dbf.js.map",
     "453.6dc39f21.chunk.js.map": "/yamlEditor/static/js/453.6dc39f21.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81e7ba29.css",
-    "static/js/main.f5c5a56e.js"
+    "static/js/main.77618dbf.js"
   ]
 }
