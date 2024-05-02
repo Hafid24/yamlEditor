@@ -34,7 +34,7 @@ xmas-fifth-day:
 
 export function YamlEditor(props: any) {
     const [yamlText, setYamlText] = useState<string>(exampleYaml);
-    const [yamlData, setYamlData] = useState<any>();
+    const [yamlJson, setYamlJson] = useState<any>();
 
 
 
@@ -44,12 +44,12 @@ export function YamlEditor(props: any) {
     const handleUpdateValue = (itemKey: string, newValue: string, index = -1) => {
 
         if (index > -1) {
-            const data = setIn(itemKey + `[${index}]`, newValue, yamlData)
-            setYamlData(data)
+            const data = setIn(itemKey + `[${index}]`, newValue, yamlJson)
+            setYamlJson(data)
             setYamlText(jsonToYaml(data))
         } else {
-            const data = setIn(itemKey, newValue, yamlData)
-            setYamlData(data)
+            const data = setIn(itemKey, newValue, yamlJson)
+            setYamlJson(data)
             setYamlText(jsonToYaml(data))
         }
     };
@@ -59,7 +59,7 @@ export function YamlEditor(props: any) {
         setYamlText(newValue);
         const errorLine = getErrorLine(newValue);
         if (errorLine < 0) {
-            setYamlData(yamlToJson(newValue));
+            setYamlJson(yamlToJson(newValue));
         }
     };
 
@@ -67,7 +67,7 @@ export function YamlEditor(props: any) {
     return (
         <div className='container'>
             <Tree
-                yamlData={yamlData}
+                yamlJson={yamlJson}
                 height='200px'
                 handleUpdateValue={handleUpdateValue}
             />

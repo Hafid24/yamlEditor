@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function Tree({ yamlData = {}, propertyKey, handleUpdateValue }: any) {
+export default function Tree({ yamlData = {}, child = false, propertyKey, handleUpdateValue }: any) {
     const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
 
 
@@ -56,7 +56,7 @@ export default function Tree({ yamlData = {}, propertyKey, handleUpdateValue }: 
                 <span onClick={() => toggleItemExpansion(nodeKey)}>{nodeKey.split('.').slice(-1)[0]} :</span>
                 {isExpanded && (
                     <div className="margin-left">
-                        <Tree yamlData={nodeValue} propertyKey={nodeKey} handleUpdateValue={handleUpdateValue} />
+                        <Tree yamlData={nodeValue} propertyKey={nodeKey} handleUpdateValue={handleUpdateValue} child={true} />
                     </div>
                 )}
             </div>
@@ -65,7 +65,7 @@ export default function Tree({ yamlData = {}, propertyKey, handleUpdateValue }: 
 
 
     return (
-        <div className="flex-item padding-1 overflow-auto" style={{ marginBottom: "15px", minWidth: "300px" }}>
+        <div className={`flex-item ${child ? '' : 'padding-1'} overflow-auto`} style={{ marginBottom: "15px", minWidth: "300px" }}>
             {Object.entries(yamlData).map(([nodeKey, nodeValue]) => renderNode(nodeValue, propertyKey ? `${propertyKey}.${nodeKey}` : nodeKey))}
         </div>
     );
